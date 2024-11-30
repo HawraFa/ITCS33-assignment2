@@ -49,9 +49,21 @@ $outcome = $data["results"];
     <tbody>
 
     <!--put the php here-->
-
-
-
+    <?php
+      // Loop through the "outcome" array in which we stored the result and display each student's information
+      foreach ($outcome as $student) {
+        ?>
+        <tr>
+          <td><?php echo $student["year"]; ?></td>
+          <td><?php echo $student["semester"]; ?></td>
+          <td><?php echo $student["the_programs"]; ?></td>
+          <td><?php echo $student["nationality"]; ?></td>
+          <td><?php echo $student["colleges"]; ?></td>
+          <td><?php echo $student["number_of_students"]; ?></td>
+        </tr>
+        <?php
+      }
+      ?>
 
     </tbody>
   </table>
