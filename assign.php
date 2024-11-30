@@ -29,9 +29,21 @@ $outcome = $data["results"];
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 
   <title>UOB Student Nationality</title> <!-- Title of the webpage -->
+
+   <!-- Add style to the title -->
+   <style>
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Add a title before the table -->
+  <h1>UOB Student Nationality</h1>
+  
   <!-- Start of the table to display the student data -->
   <table>
     <thead>
